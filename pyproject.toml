@@ -1,0 +1,19 @@
+# I tried to use poetry, but i resolving dependencies for too long
+
+[tool.poetry]
+name = "team24"
+version = "0.1.0"
+description="BigData cluster for recommendation system"
+authors=["d.nekrasov@innopolis.university","m.zimin@innopolis.university",
+         "m.brednikov@innopolis.university","n.kurkulskiu@innopolis.university"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+pylint = "*"
+pyspark = "*"
+pandas = "*"
+streamlit = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

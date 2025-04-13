@@ -1,0 +1,1 @@
+COPY airbnb FROM STDIN WITH (FORMAT csv, DELIMITER ',', HEADER true, NULL '', QUOTE '"');

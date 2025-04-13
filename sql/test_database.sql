@@ -1,0 +1,1 @@
+SELECT * FROM airbnb LIMIT 10;
