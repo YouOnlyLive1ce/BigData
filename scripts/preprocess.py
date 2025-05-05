@@ -34,7 +34,9 @@ for column_name in string_columns:
 # in initial data columns latitude and longitude are mixed up
 useful_df.rename({'Latitude':'Longitude','Longitude':'Latitude'})
 
-#TODO: Missing values via knn?
+# drop rows where important columns are missed
+useful_df=useful_df.dropna(subset=['Latitude','Longitude','City'])
+print('nans in coordinates: ', useful_df[['Latitude', 'Longitude', 'City']].isna().sum())
 
 print(useful_df.dtypes)
 print('len useful df:',len(useful_df))
@@ -42,4 +44,4 @@ print('len useful df:',len(useful_df))
 useful_df.to_csv('data/airbnb_24_preprocessed.csv', sep=separator, index=False)
 
 # sanity check. Should be empty
-# awk -F'|' 'NF!=25' data/airbnb_24_preprocessed.csv
+# awk -F'|' 'NF!=25' data/airbnb_24_preprocessed.csv # ','?
