@@ -1,1 +1,0 @@
-{"class":"org.apache.spark.ml.feature.Tokenizer","timestamp":1746590277163,"sparkVersion":"3.2.4","uid":"Tokenizer_0e425034d9ce","paramMap":{"inputCol":"transit","outputCol":"transit_tokens"},"defaultParamMap":{"outputCol":"Tokenizer_0e425034d9ce__output"}}
