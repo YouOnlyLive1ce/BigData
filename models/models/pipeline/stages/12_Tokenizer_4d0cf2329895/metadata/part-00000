@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.Tokenizer","timestamp":1746550293915,"sparkVersion":"3.2.4","uid":"Tokenizer_4d0cf2329895","paramMap":{"outputCol":"neighborhood_overview_tokens","inputCol":"neighborhood_overview"},"defaultParamMap":{"outputCol":"Tokenizer_4d0cf2329895__output"}}

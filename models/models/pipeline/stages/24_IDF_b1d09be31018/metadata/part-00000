@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.IDFModel","timestamp":1746550298718,"sparkVersion":"3.2.4","uid":"IDF_b1d09be31018","paramMap":{"outputCol":"neighborhood_overview_tfidf","inputCol":"neighborhood_overview_tf"},"defaultParamMap":{"outputCol":"IDF_b1d09be31018__output","minDocFreq":0}}
