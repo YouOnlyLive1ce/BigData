@@ -47,3 +47,18 @@ TBLPROPERTIES (
     'skip.header.line.count'='1',
     'serialization.null.format'=''  -- Handle empty values
 );
+
+DROP TABLE IF EXISTS evaluation;
+
+CREATE EXTERNAL TABLE IF NOT EXISTS evaluation(
+    name STRING,
+    score FLOAT
+)
+ROW FORMAT DELIMITED 
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE 
+LOCATION 'project/output/evaluation'
+TBLPROPERTIES (
+    'skip.header.line.count'='0',
+    'serialization.null.format'=''  -- Handle empty values
+);
